@@ -1,0 +1,21 @@
+name: Kotoba Memory
+
+on:
+  push:
+    branches:
+      - utama
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ambil kode repository
+        uses: actions/checkout@v4
+
+      - name: Selesai
+        run: echo "Repository Kotoba Memory berhasil dibaca."
